@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4b4b4b;
+}
+
+.card {
+    border: 1px solid #f3dce3;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff0f5; /* ніжно-рожевий фон */
+}
+.add {
+    display: grid;
+    grid-template-columns: 1fr 1fr 160px auto;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.add input,
+.add select {
+    padding: 0.5rem;
+    border: 1px solid #f3c6d2;
+    border-radius: 6px;
+}
+.add button {
+    padding: 0.5rem 0.8rem;
+    border: none;
+    background: #f49fb1;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.add button:hover {
+    background: #f07193;
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: 1fr 160px 160px 1fr auto;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.date-range {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin: 0.75rem 0;
+    font-weight: 500;
+    color: #c2185b;
+}
+
+.list {
+    display: grid;
+    gap: 0.5rem;
+}
+.empty {
+    text-align: center;
+    padding: 2rem 0;
+    color: #ad5d7f;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid #f3c6d2;
+    border-radius: 8px;
+    background: #ffeaf1;
+}
+.todo-item .done {
+    text-decoration: line-through;
+    color: #a67a88;
+}
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+.actions button {
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #f7a6c1;
+    color: #fff;
+}
+.actions button:hover {
+    background: #f07193;
+}
+
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
