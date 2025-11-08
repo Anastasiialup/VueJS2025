@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "Профіль та Кошик",
+    "products": "Товари",
+    "cart": "Кошик",
+    "profile": "Профіль",
+    "settings": "Налаштування",
+    "change_lang": "Мова"
+  },
+  "buttons": {
+    "add": "Додати",
+    "remove": "Видалити",
+    "clear": "Очистити",
+    "save": "Зберегти",
+    "reset": "Скинути"
+  },
+  "fields": {
+    "name": "Ім'я",
+    "email": "Email",
+    "dob": "ДН",
+    "address": "Адреса",
+    "phones": "Телефони",
+    "phone": "Телефон"
+  },
+  "errors": {
+    "required": "{field} обов'язкове",
+    "email": "Невірний email",
+    "min": "{field} має бути щонайменше {min} символів",
+    "phone": "Невірний телефон"
+  },
+  "messages": {
+    "welcome": "Ласкаво просимо, {name}!",
+    "cart_empty": "Кошик порожній",
+    "total": "Разом"
+  }
+}

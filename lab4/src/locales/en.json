@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "Profile & Cart",
+    "products": "Products",
+    "cart": "Cart",
+    "profile": "Profile",
+    "settings": "Settings",
+    "change_lang": "Language"
+  },
+  "buttons": {
+    "add": "Add",
+    "remove": "Remove",
+    "clear": "Clear",
+    "save": "Save",
+    "reset": "Reset"
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "dob": "Date of birth",
+    "address": "Address",
+    "phones": "Phones",
+    "phone": "Phone"
+  },
+  "errors": {
+    "required": "{field} is required",
+    "email": "Invalid email",
+    "min": "{field} must be at least {min} characters",
+    "phone": "Invalid phone"
+  },
+  "messages": {
+    "welcome": "Welcome, {name}!",
+    "cart_empty": "Cart is empty",
+    "total": "Total"
+  }
+}

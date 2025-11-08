@@ -1,0 +1,88 @@
+:root{
+    --bg:#fff7fb;
+    --card: #f6cfdf;
+    --accent:#c71585;
+    --text:#222;
+}
+
+[data-theme="dark"]{
+    --bg:#121214;
+    --card:#1b1b1f;
+    --accent:#ff7fbf;
+    --text:#f4f4f5;
+}
+
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    background:var(--bg);
+    color:var(--text);
+}
+
+.app-header, .app-footer {
+    background: var(--card);
+    padding: 12px 20px;
+    margin: 8px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.app-header {
+    margin-bottom: 40px; /* додає більше простору під хедером */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 12px auto;
+    padding: 0 12px 5px; /* було 24px → стало 16px */
+}
+
+
+.card{
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.btn{
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight:600;
+}
+
+.input {
+    padding:8px;
+    border-radius:6px;
+    border:1px solid rgba(0,0,0,0.08);
+    width:100%;
+}
+
+.form-row{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.small {
+    max-width:160px;
+}
+
+/* simple layout */
+.grid-2 { display:grid; grid-template-columns: 1fr 320px; gap:16px; }
+
+/* errors */
+.error { color: #b00020; font-size:0.9rem; margin-top:6px; }
+
+/* route transition */
+.route-fade-enter-from, .route-fade-leave-to { opacity:0; transform: translateY(8px) }
+.route-fade-enter-active, .route-fade-leave-active { transition: all .28s ease; }
