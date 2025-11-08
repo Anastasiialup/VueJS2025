@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg-color: #ffe6f0;
+  --text-color: #333;
+  --primary-color: #c71585;
+  --card-bg: #fff0f6;
+}
+
+[data-theme="dark"] {
+  --bg-color: #2a2a2a;
+  --text-color: #f0f0f0;
+  --primary-color: #ff85a2;
+  --card-bg: #3a3a3a;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a.router-link-active {
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff85a2;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+header, footer {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-content {
+  padding: 16px 2rem;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.active-link, .exact-active-link {
+  font-weight: bold;
+  color: #c71585;
+  text-decoration: underline;
+}
